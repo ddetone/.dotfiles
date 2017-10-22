@@ -1,18 +1,15 @@
-" -- BEGIN VUNDLE --
-filetype off                  " required!
-
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#rc()
-
-" let Vundle manage Vundle, required!
-Bundle 'gmarik/vundle'
+"" -- BEGIN VUNDLE --
+"filetype off                  " required!
+"
+"set rtp+=~/.vim/bundle/Vundle.vim/
+"call vundle#rc()
+"
+"" let Vundle manage Vundle, required!
+"Bundle 'gmarik/vundle'
 
 filetype plugin indent on
 
 " -- END VUNDLE --
-
-" Fuzzy Finder
-set rtp+=~/.fzf
 
 
 " Fix terminal colors
@@ -192,37 +189,37 @@ nnoremap <C-L> :nohl<CR><C-L>
 
 "------------------------------------------------------------
 
-Bundle 'Valloric/YouCompleteMe'
-let g:ycm_autoclose_preview_window_after_completion=1
-let mapleader=" "
-map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-"Bundle 'ivanov/vim-ipython'
-
-""python with virtualenv support
-"py << EOF
-"import os
-"import sys
-"if 'VIRTUAL_ENV' in os.environ:
-"  project_base_dir = os.environ['VIRTUAL_ENV']
-"  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-"  execfile(activate_this, dict(__file__=activate_this))
-"EOF
-
-"Bundle 'scrooloose/syntastic'
-
-" Better tree navigation
-Bundle 'scrooloose/nerdtree'
-map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
-set encoding=utf-8 "fix bug with not being able to click subdirs in NERDTree
-
-" Show git status in nerdtree
-Bundle 'Xuyuanp/nerdtree-git-plugin'
-
-Plugin 'JamshedVesuna/vim-markdown-preview'
-
-Plugin 'ntpeters/vim-better-whitespace'
-" Useful commands
-" :ToggleWhitespace
-" :StripWhitespace
+"Bundle 'Valloric/YouCompleteMe'
+"let g:ycm_autoclose_preview_window_after_completion=1
+"let mapleader=" "
+"map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
+"
+""Bundle 'ivanov/vim-ipython'
+"
+"""python with virtualenv support
+""py << EOF
+""import os
+""import sys
+""if 'VIRTUAL_ENV' in os.environ:
+""  project_base_dir = os.environ['VIRTUAL_ENV']
+""  activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
+""  execfile(activate_this, dict(__file__=activate_this))
+""EOF
+"
+""Bundle 'scrooloose/syntastic'
+"
+"" Better tree navigation
+"Bundle 'scrooloose/nerdtree'
+"map <C-n> :NERDTreeToggle<CR>
+"let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+"set encoding=utf-8 "fix bug with not being able to click subdirs in NERDTree
+"
+"" Show git status in nerdtree
+"Bundle 'Xuyuanp/nerdtree-git-plugin'
+"
+"Plugin 'JamshedVesuna/vim-markdown-preview'
+"
+"Plugin 'ntpeters/vim-better-whitespace'
+"" Useful commands
+"" :ToggleWhitespace
+"" :StripWhitespace

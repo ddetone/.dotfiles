@@ -81,11 +81,11 @@ git config --global color.interactive auto
 git config --global color.status auto
 
 # 7) color options
-if [ -f ~/.setup_terminal/dotfiles/.git-prompt.sh ]; then
-   source ~/.setup_terminal/dotfiles/.git-prompt.sh
+if [ -f ~/.dotfiles/.git-prompt.sh ]; then
+   source ~/.dotfiles/.git-prompt.sh
 fi
-if [ -f ~/.setup_terminal/dotfiles/.bash_colordefs ]; then
-   source ~/.setup_terminal/dotfiles/.bash_colordefs
+if [ -f ~/.dotfiles/.bash_colordefs ]; then
+   source ~/.dotfiles/.bash_colordefs
 fi
 export PS1='[\u@\h$(\
 if [ $(__git_ps1)x != "x" ]; then \
@@ -102,6 +102,5 @@ else \
   echo " '$Yellow$PathShort$Color_Off']\$ "; \
 fi)'
 
-# 8) Fuzzy finder
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
