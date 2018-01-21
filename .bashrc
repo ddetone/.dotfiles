@@ -9,9 +9,10 @@ if [ "$(uname)" == "Darwin" ]; then
   export LSCOLORS="exfxcxdxcxegedabagacad"
   alias envtf='source ~/code/tf/bin/activate'
   export PYTHONPATH=~/code/caffe/python
-  if [ -f `brew --prefix`/etc/bash_completion ]; then
-    . `brew --prefix`/etc/bash_completion
-  fi
+  #if [ -f `brew --prefix`/etc/bash_completion ]; then
+  #  . `brew --prefix`/etc/bash_completion
+  #fi
+  source ~/.dotfiles/git-completion.bash
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   export TERM=screen-256color
