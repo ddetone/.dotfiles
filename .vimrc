@@ -171,11 +171,28 @@ set pastetoggle=<F11>
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set softtabstop=2
 
-" Indentation settings for using hard tabs for indent. Display tabs as
-" four characters wide.
-"set shiftwidth=4
-"set tabstop=4
+" ******
+" SETTING UP 2 TAB IN PYTHON. MUST CREATE THE FOLLOWING FILE TO OVERWRITE VIM.
+"
+" There are two ways to go about doing this. If you have a ~/.vim folder, the
+" easiest way is to add the file ~/.vim/after/ftplugin/python.vim:
+" 
+" " Here, you can set the setting directly, or call a command or function
+" " to help you.  We'll call a command, and then implement that command in
+" " your top-level vimrc to help keep things in one place.
+" SetupPython
+" In your .vimrc, add:
+function! SetupPython()
+    " Here, you can have the final say on what is set.  So
+    " fixup any settings you don't like.
+    setlocal softtabstop=2
+    setlocal tabstop=2
+    setlocal shiftwidth=2
+endfunction
+command! -bar SetupPython call SetupPython()
+" ******
 
 
 "------------------------------------------------------------
