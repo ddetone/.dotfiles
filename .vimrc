@@ -12,10 +12,13 @@ filetype plugin indent on
 " -- END VUNDLE --
 
 
-" Fix terminal colors
-if $COLORTERM == 'gnome-terminal'
-  set t_Co=256
-endif
+"" Fix terminal colors
+"if $COLORTERM == 'gnome-terminal'
+"  set t_Co=256
+"endif
+set t_Co=256
+colorscheme peachpuff
+" colorscheme ron
 
 set splitbelow
 set splitright
@@ -79,6 +82,7 @@ set hidden
 " set autowriteall
 
 " Better command-line completion
+set wildmode=longest,list,full
 set wildmenu
 
 " Show partial commands in the last line of the screen

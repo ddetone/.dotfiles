@@ -6,7 +6,7 @@ if [ "$(uname)" == "Darwin" ]; then
   alias ls='ls -FGhp'
   alias f='open -a Finder ./'
   export TERM=xterm-256color
-  export LSCOLORS="exfxcxdxcxegedabagacad"
+  #export LSCOLORS="exfxcxdxcxegedabagacad"
   alias envtf='source ~/code/tf/bin/activate'
   export PYTHONPATH=~/code/caffe/python
   #if [ -f `brew --prefix`/etc/bash_completion ]; then
@@ -16,7 +16,7 @@ if [ "$(uname)" == "Darwin" ]; then
 
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   export TERM=screen-256color
-  export LS_COLORS="di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.deb=90"
+  #export LS_COLORS="di=1:fi=0:ln=31:pi=5:so=5:bd=5:cd=5:or=31:mi=0:ex=35:*.deb=90"
   alias ll="ls -alrtF --color"
   alias ls="ls --color"
   if [ -f ~/.git-completion.bash ]; then
