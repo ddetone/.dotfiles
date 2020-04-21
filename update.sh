@@ -11,5 +11,5 @@ ln -sf .dotfiles/.bash_profile .
 ln -sf .dotfiles/.bashrc .
 ln -sf .dotfiles/.tmux.conf .
 ln -sf .dotfiles/.vimrc .
-#ln -sf .dotfiles/.vim .
+ln -sf .dotfiles/.vim .
 #git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
