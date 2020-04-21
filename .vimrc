@@ -1,15 +1,12 @@
-"" -- BEGIN VUNDLE --
-"filetype off                  " required!
-"
-"set rtp+=~/.vim/bundle/Vundle.vim/
-"call vundle#rc()
-"
-"" let Vundle manage Vundle, required!
-"Bundle 'gmarik/vundle'
+" ---- Start plug-vim 
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
 
-filetype plugin indent on
+Plug 'ntpeters/vim-better-whitespace'
 
-" -- END VUNDLE --
+" Initialize plugin system
+call plug#end()
+" ---- End plug-vim
 
 
 "" Fix terminal colors
@@ -169,9 +166,9 @@ set pastetoggle=<F11>
 " Indentation settings for using 4 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 " ******
 " SETTING UP 2 TAB IN PYTHON. MUST CREATE THE FOLLOWING FILE TO OVERWRITE VIM.
@@ -187,9 +184,9 @@ set softtabstop=2
 function! SetupPython()
     " Here, you can have the final say on what is set.  So
     " fixup any settings you don't like.
-    setlocal softtabstop=2
-    setlocal tabstop=2
-    setlocal shiftwidth=2
+    setlocal softtabstop=4
+    setlocal tabstop=4
+    setlocal shiftwidth=4
 endfunction
 command! -bar SetupPython call SetupPython()
 " ******
