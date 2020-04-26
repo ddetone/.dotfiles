@@ -5,6 +5,7 @@ cd $HOME
 
 ln -sf .dotfiles/.zshrc .
 ln -sf .dotfiles/.tmux.conf .
+ln -sf .dotfiles/.tmux.conf.local .
 ln -sf .dotfiles/.vimrc .
 ln -sf .dotfiles/.vim .
 # my powershell10k config file

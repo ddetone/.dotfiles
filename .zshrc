@@ -14,7 +14,7 @@ export ZSH="/Users/ddetone/.oh-my-zsh"
 
 # Theme.
 ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="simple2"
+#ZSH_THEME="simple"
 #ZSH_THEME="cordial"
 #ZSH_THEME="agnoster"
 
@@ -27,10 +27,17 @@ git config --global color.interactive auto
 git config --global color.status auto
 git config --global pager.branch false # Prevents git from opening less for certain commands
 
+# My aliases.
 alias ez="vi $HOME/.zshrc"
 alias sz="source $HOME/.zshrc"
 alias pyserver="python -m SimpleHTTPServer"
-
+alias rm="rm -i"
+alias mv="mv -i"
+alias cp="cp -i"
+set -o noclobber
+alias duh='du -ch -d=1'
+alias dus='du -hs * | sort -h'
+alias tre='tree -A -C -L 2'
 
 # Plugins.
 plugins=(git)
