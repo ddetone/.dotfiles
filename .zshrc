@@ -30,7 +30,7 @@ git config --global pager.branch false # Prevents git from opening less for cert
 # My aliases.
 alias ez="vi $HOME/.zshrc"
 alias sz="source $HOME/.zshrc"
-alias pyserver="python -m SimpleHTTPServer"
+alias pyserver="python3 -m http.server"
 alias rm="rm -i"
 alias mv="mv -i"
 alias cp="cp -i"
