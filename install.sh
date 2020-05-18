@@ -64,6 +64,7 @@ echo "\n==> Adding symlinks to my home directory"
 set -ex
 cd $HOME
 ln -sf .dotfiles/.zshrc .
+ln -sf .dotfiles/.zshrc.local .
 ln -sf .dotfiles/.tmux.conf .
 ln -sf .dotfiles/.tmux.conf.local .
 ln -sf .dotfiles/.vimrc .
