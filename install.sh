@@ -25,16 +25,16 @@ else
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $P10
 fi
 
-# Download powerline fonts and install them.
-echo "\n==> Installing powerline fonts"
-FONTS="$PWD/fonts/"
-if [ -d $FONTS ]
-then
-    echo "Directory $FONTS exists, skipping"
-else
-    git clone https://github.com/powerline/fonts.git --depth=1
-    ./fonts/install.sh
-fi
+## Download powerline fonts and install them.
+#echo "\n==> Installing powerline fonts"
+#FONTS="$PWD/fonts/"
+#if [ -d $FONTS ]
+#then
+#    echo "Directory $FONTS exists, skipping"
+#else
+#    git clone https://github.com/powerline/fonts.git --depth=1
+#    ./fonts/install.sh
+#fi
 
 # Download oh-my-tmux.
 echo "\n==> Installing oh-my-tmux"
@@ -70,4 +70,5 @@ ln -sf .dotfiles/.tmux.conf.local .
 ln -sf .dotfiles/.vimrc .
 ln -sf .dotfiles/.vim .
 ln -sf .dotfiles/.p10k.zsh .
+ln -sf .dotfiles/.fonts .
 #ln -sf .dotfiles/ddetone.zsh-theme .oh-my-zsh/custom/themes/
