@@ -1,3 +1,0 @@
-alias hummer_sleep="ssh -t hummer.local 'systemctl suspend -i'"
-alias hummer_wake="wakeonlan a8:a1:59:0a:a2:e9"
-alias hummer='ssh hummer.local'
