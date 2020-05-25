@@ -275,7 +275,7 @@ tmux_conf_copy_to_os_clipboard=false
 # this is the place to override or undo settings
 
 # increase history size
-#set -g history-limit 10000
+set -g history-limit 100000
 
 # start with mouse mode enabled
 #set -g mouse on
@@ -315,3 +315,15 @@ bind l select-pane -R
 # Use vim left and right keys for navigation
 bind -r C-h select-window -t :-
 bind -r C-l select-window -t :+
+
+# Use vim key bindings for copy/paste mode
+setw -g mode-keys vi
+# Use vim-like bindings for copy/paste navigation
+unbind p
+bind p paste-buffer
+bind-key -t vi-copy v begin-selection
+bind-key -t vi-copy y copy-selection
+#
+#set -g bell-action none
+
+set-option -g repeat-time 0
