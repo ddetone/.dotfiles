@@ -8,6 +8,6 @@ See https://github.com/junegunn/vim-plug for details
 
 Then run:
 
-./update.sh
+./install.sh
 
 This will create symlinks of all the dotfiles to your home directory
