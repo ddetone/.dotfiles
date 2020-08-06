@@ -18,7 +18,7 @@ fi
 # Download powerlevel10k
 echo "\n==> Installing powerlevel10k custom theme for oh-my-zsh"
 P10=${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
-if [ -d $OMZ ]
+if [ -d $P10 ]
 then
     echo "Directory $P10 exists, skipping"
 else
