@@ -68,7 +68,7 @@ ln -sf .dotfiles/.zshrc.local .
 ln -sf .dotfiles/.tmux.conf .
 ln -sf .dotfiles/.tmux.conf.local .
 ln -sf .dotfiles/.vimrc .
-ln -sf .dotfiles/.vim .
 ln -sf .dotfiles/.p10k.zsh .
 ln -sf .dotfiles/.fonts .
+ln -sf .dotfiles/.vim .
 #ln -sf .dotfiles/ddetone.zsh-theme .oh-my-zsh/custom/themes/
