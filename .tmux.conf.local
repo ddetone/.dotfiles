@@ -321,8 +321,8 @@ setw -g mode-keys vi
 # Use vim-like bindings for copy/paste navigation
 unbind p
 bind p paste-buffer
-bind-key -t vi-copy v begin-selection
-bind-key -t vi-copy y copy-selection
+#bind-key -t vi-copy v begin-selection
+#bind-key -t vi-copy y copy-selection
 #
 #set -g bell-action none
 
